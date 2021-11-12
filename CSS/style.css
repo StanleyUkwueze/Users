@@ -1,0 +1,133 @@
+body {
+  display: grid;
+  column-gap: 4rem;
+  row-gap: 1rem;
+  min-width: 327px;
+}
+.main_container {
+  min-width: 327px;
+  max-width: 1440px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.Users {
+  background-image: url(/assets/Path\ _Copy\ 5.png);
+  display: flex;
+  justify-content: center;
+  color: #512051;
+  font-size: 25px;
+  line-height: 40px;
+
+  text-align: center;
+}
+/* .section_0ne-container {
+  display: grid;
+  grid-template-columns: 1fr;
+} */
+
+.sect_1_sm_font {
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  line-height: 25px;
+}
+.star_rectangles_container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+.star_rectangle {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  background-color: #f7f2f7;
+  margin-top: 1rem;
+  text-align: center;
+}
+/* .star_rectangle_flex > img {
+  width: 16px;
+  height: 16px;
+} */
+.stars {
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+}
+.stars > img {
+  position: relative;
+
+  top: 11px;
+  width: 15px;
+  height: 12px;
+}
+.Verified_color {
+  color: #ee694e;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.grid_item {
+  background-color: #512051;
+  color: #fff;
+  height: 220px;
+  margin-top: 1rem;
+  padding: 30px 20px;
+  border-radius: 8px;
+}
+.name-container {
+  color: #fff;
+}
+.buyer_flex_container {
+  display: flex;
+  flex-direction: row;
+}
+.buyer_img {
+  margin-right: 14px;
+}
+.name-container {
+  line-height: 2px;
+  position: relative;
+  bottom: 7px;
+}
+.rate {
+  color: #512051;
+  font-weight: bold;
+}
+.testimony {
+  color: #927b91;
+}
+
+.grid_item_3 {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+/* desktop view  */
+
+@media all and (min-width: 700px) {
+  .main_flex_container {
+    display: flex;
+  }
+  .star_rectangle {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+
+    text-align: center;
+  }
+  .main_container {
+    padding: 60px 80px;
+    width: 1440px;
+    height: 800px;
+  }
+}
