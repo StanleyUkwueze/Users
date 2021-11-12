@@ -24,10 +24,6 @@ body {
 
   text-align: center;
 }
-/* .section_0ne-container {
-  display: grid;
-  grid-template-columns: 1fr;
-} */
 
 .sect_1_sm_font {
   height: 100px;
@@ -46,16 +42,14 @@ body {
 }
 .star_rectangle {
   display: grid;
+
   grid-template-columns: 1fr;
   justify-content: center;
   background-color: #f7f2f7;
   margin-top: 1rem;
   text-align: center;
 }
-/* .star_rectangle_flex > img {
-  width: 16px;
-  height: 16px;
-} */
+
 .stars {
   display: flex;
   justify-content: center;
@@ -74,6 +68,7 @@ body {
 
 .grid_container {
   display: grid;
+
   grid-template-columns: 1fr;
 }
 .grid_item {
@@ -113,21 +108,70 @@ body {
 }
 
 /* desktop view  */
-
-@media all and (min-width: 700px) {
+@media all and (min-width: 600px) {
   .main_flex_container {
-    display: flex;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "section_0ne-container star_rectangles_container";
+  }
+  .grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "first-Testimony second-testimony third-testimony";
+    padding: 40px;
+  }
+  .grid_item_1 {
+    grid-area: first-Testimony;
+  }
+  .grid_item_2 {
+    grid-area: second-testimony;
+    position: relative;
+    top: 15px;
+  }
+  .grid_item_3 {
+    grid-area: third-testimony;
+    position: relative;
+    top: 30px;
+  }
+  .grid_item {
+    margin-right: 20px;
+  }
+  .sect_1_sm_font {
+    text-align: left;
+  }
+  .star_rectangles_container {
+    width: 80%;
+    padding: 50px;
+    margin-left: 40px;
+    margin-right: 100px;
   }
   .star_rectangle {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-
-    text-align: center;
+    position: relative;
+    right: 40px;
+    border-radius: 10px;
+    display: flex;
   }
-  .main_container {
-    padding: 60px 80px;
-    width: 1440px;
-    height: 800px;
+  .stars{
+    margin-top: 7px;
+   
+  }
+  .stars > img{
+  margin-left: 7px;
+   
+  }
+  .star_rectangle_one {
+    position: relative;
+    right: 110px;
+  }
+  .star_rectangle_two {
+    position: relative;
+    right: 60px;
+  }
+  .star_rectangle_three {
+    position: relative;
+    right: 30px;
   }
 }
